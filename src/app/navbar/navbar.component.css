@@ -1,0 +1,10 @@
+.navbar-logo {
+  width: 100px; /* Définir la largeur souhaitée */
+  height: 80px; /* Maintenir le rapport hauteur-largeur */
+  margin-right: 15px; /* Espacement à droite */
+}
+/* Styles pour le lien actif */
+.nav-link.active {
+  font-weight: bold; /* Mettre en gras */
+  color: #fff; /* Couleur du texte */
+}
