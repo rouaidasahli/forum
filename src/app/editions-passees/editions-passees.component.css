@@ -1,0 +1,129 @@
+hr {
+  width: 60px;
+  border: none;
+  border-top: 2px solid rgb(13, 3, 81); 
+}
+
+p {
+  color: #1e097b;
+  font-size: 18px; 
+  font-weight: bold; 
+  margin-top: 20px; 
+  text-align: center;
+}
+@import url('https://fonts.googleapis.com/css2?family=Coda&display=swap'); /* menu */
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap'); /*titres*/
+@import url('https://fonts.googleapis.com/css2?family=Piazzolla:wght@300&display=swap'); /* textes paragraphes */
+
+
+body{
+    background-color: #10024f;
+}
+.timeline {
+    position: relative;
+    margin: 0 auto;
+    padding: 5vh;
+    width: 90%;
+}
+
+.timeline ul li {
+    margin-bottom: 50px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.point {
+    min-width: 20px;
+    height: 20px;
+    background-color: #150463;
+    border-radius: 100%;
+    z-index: 2;
+    border: 3px #f7f3f3 solid;
+    position: relative;
+    left: 1px;
+}
+.point:hover {
+    min-width: 50px;
+    height: 50px;
+}
+.timeline ul li .content {
+    width: 50%;
+    padding: 0 20px;
+}
+
+.timeline ul li:nth-child(odd) .content {
+    padding-left: 0;
+}
+
+.timeline ul li:nth-child(odd) .date {
+    padding-right: 0;
+}
+
+.timeline ul li:nth-child(even) .content {
+    padding-right: 0;
+}
+
+.timeline ul li:nth-child(even) .date {
+    padding-left: 0;
+}
+
+.timeline ul li .date {
+    width: 50%;
+    padding: 0 20px;
+    font-weight: normal;
+}
+
+.timeline ul li .date h4 {
+    background-color: #ffffff;
+    width: 100px;
+    text-align: center;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.timeline ul li .content h3 {
+    padding: 10px 20px;
+    background-color: #f0eff2;
+    margin-bottom: 0;
+    text-align: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.timeline ul li .content p {
+    padding: 10px 20px;
+    background-color: #fafafd;
+    margin-top: 0;
+    text-align: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.timeline ul li:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.timeline ul li:nth-child(even) .date h4 {
+    float: right
+}
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 3px;
+    left: 50%;
+    background-color: rgb(12, 5, 84);
+}
+h3{
+    font-family:"Oswald";
+    color: rgb(23, 2, 64);
+}
+h4{
+    font-family:"Coda";
+}
+p{
+    font-family: "Piazzolla";
+}

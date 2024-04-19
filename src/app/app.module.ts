@@ -12,6 +12,8 @@ import { SignUpComponent } from './sign-up/sign-up.component';
 import { AccueilComponent } from './accueil/accueil.component';
 import { FormulaireComponent } from './formulaire/formulaire.component';
 import { EditionsPasseesComponent } from './editions-passees/editions-passees.component';
+import { CarouselComponent } from './carousel/carousel.component';
+
 
 @NgModule({
   declarations: [
@@ -25,7 +27,8 @@ import { EditionsPasseesComponent } from './editions-passees/editions-passees.co
     AccueilComponent,
     FormulaireComponent,
     
-    EditionsPasseesComponent
+    EditionsPasseesComponent,
+    CarouselComponent
   ],
   imports: [
     BrowserModule,

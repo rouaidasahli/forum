@@ -1,0 +1,79 @@
+.carousel{
+  margin-right: 11vw;
+  display: flex;
+  margin-left: 30px;
+  margin-bottom: 2vw;
+  justify-content: center;
+  align-items: center;
+
+}
+.card{
+  display: flex;
+  flex-direction: column;
+
+}
+.card-title {
+  text-align: center;
+  color: rgb(235, 234, 237);
+
+}
+.card-text{
+  color: rgb(9, 3, 92);
+  background-color:rgb(247, 244, 244);
+  text-justify: auto;
+
+}
+
+.carousel-items {
+  display: flex;
+  overflow-x:  scroll;
+  scroll-snap-type: both mandatory;
+  scroll-padding-block: 0;
+  font-family: "Piazzolla";
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(247, 244, 244);
+  margin: 0vw;
+  box-shadow: 0 2px 2px 0 rgb(236, 233, 233);
+  box-sizing: content-box;
+  background-color: rgb(235, 227, 227);
+  opacity: 0.9;
+  font-size: 18px;
+  width: 75vw;
+  padding: 0vw;
+  border-radius: 1rem;
+
+  
+}
+
+.carousel-item {
+  flex: 1 0 100%;
+  scroll-snap-align: start;
+  padding: 1vw;  
+  max-width: 75vw;
+}
+
+.carousel-image{
+}
+ul {
+  list-style-type: none; 
+  
+}
+
+a:link { color: rgb(242, 241, 243); }          
+a:visited { color: white; }     
+a:active { color: white; }       
+p{
+  font-size: 16px;
+  line-height: 1.5; 
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: justify; 
+  color: #333; 
+  font-weight: bold;
+  font-weight: bold;
+}
+
+
+
+
