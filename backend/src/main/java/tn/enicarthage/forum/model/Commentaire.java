@@ -1,10 +1,12 @@
-package tn.enicarthage.forum.domaine;
+package tn.enicarthage.forum.model;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.OneToOne;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
@@ -15,6 +17,9 @@ import lombok.Setter;
 import lombok.ToString;
 import lombok.experimental.FieldDefaults;
 
+import java.time.LocalDateTime;
+import java.util.Date;
+
 @Entity
 @AllArgsConstructor
 @Setter
@@ -23,11 +28,19 @@ import lombok.experimental.FieldDefaults;
 @ToString
 @EqualsAndHashCode
 @FieldDefaults(level = AccessLevel.PRIVATE)
-@Table(name = "Administrateur")
-public class Admin {
+@Table(name = "Commentaire")
+public class Commentaire {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     Long id;
-    @OneToOne
+    
+    @Column(nullable = false)
+    private String contenu;   
+    @ManyToOne
+    @JoinColumn(name = "utilisateur_id")
     Utilisateur utilisateur;
+    
+    @Column(name = "date_creation", nullable = false)
+    private LocalDateTime dateCreation;
+    
 }

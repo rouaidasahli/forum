@@ -1,20 +1,20 @@
-package tn.enicarthage.forum.domaine;
+package tn.enicarthage.forum.model;
 
-
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.OneToOne;
+import javax.persistence.Table;
+import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
-import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
 import lombok.experimental.FieldDefaults;
-import lombok.AccessLevel;
 
-import javax.persistence.*;
-import java.io.Serializable;
-@Data
-@SuppressWarnings("serial")
 @Entity
 @AllArgsConstructor
 @Setter
@@ -23,18 +23,11 @@ import java.io.Serializable;
 @ToString
 @EqualsAndHashCode
 @FieldDefaults(level = AccessLevel.PRIVATE)
-@Table(name = "T_Utilisateur")
-public class Utilisateur implements Serializable {
-
+@Table(name = "Administrateur")
+public class Admin {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     Long id;
-
-    String nom;
-
-    String email;
-
-    String motDePasse;
-
-    boolean estAdministrateur;
+    @OneToOne
+    Utilisateur utilisateur;
 }

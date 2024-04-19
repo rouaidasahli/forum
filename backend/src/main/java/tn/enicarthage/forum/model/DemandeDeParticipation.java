@@ -1,4 +1,4 @@
-package tn.enicarthage.forum.domaine;
+package tn.enicarthage.forum.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -14,6 +14,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
 import lombok.experimental.FieldDefaults;
+
 import java.util.Date;
 
 @Entity

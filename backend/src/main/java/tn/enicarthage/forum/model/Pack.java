@@ -1,10 +1,9 @@
-package tn.enicarthage.forum.domaine;
+package tn.enicarthage.forum.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
@@ -14,7 +13,6 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
 import lombok.experimental.FieldDefaults;
-import java.util.Date;
 
 @Entity
 @AllArgsConstructor
@@ -24,13 +22,12 @@ import java.util.Date;
 @ToString
 @EqualsAndHashCode
 @FieldDefaults(level = AccessLevel.PRIVATE)
-@Table(name = "Commentaire")
-public class Commentaire {
+@Table(name = "Pack")
+public class Pack {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     Long id;
-    String contenu;
-    @ManyToOne
-    Utilisateur utilisateur;
-    Date dateCreation;
+    String nom;
+    String description;
+    double prix;
 }
