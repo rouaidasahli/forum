@@ -1,1 +1,38 @@
-<p>sign-up works!</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title> <!-- Set the title of the window to "Sign Up" -->
+    <link rel="icon" type="image/x-icon" href="C:\Users\elade\Desktop\forum_project\forum-main\src\assets\logo.png"> <!-- Assuming you have a favicon.ico file -->
+</head>
+<body>
+<div class="container">
+    <form>
+       
+        <img class="logo" src="assets/logo.png" alt="Logo de l'entreprise">
+        
+        <div class="input-wrapper">
+            <label for="nom_entreprise"><img src="assets/entreprise_icon.png" alt="Company Icon"></label>
+            <input type="text" id="nom_entreprise" name="nom_entreprise" placeholder="Nom de l'entreprise" required>
+        </div>
+        <div class="input-wrapper">
+            <label for="email"><img src="assets/email_icon.png" alt="Email Icon"></label>
+            <input type="email" id="email" name="email" placeholder="Adresse e-mail" required>
+        </div>
+        <div class="input-wrapper">
+            <label for="mot_de_passe"><img src="assets/lock_icon.svg" alt="Password Icon"></label>
+            <input type="password" id="mot_de_passe" name="mot_de_passe" placeholder="Mot de passe" required>
+        </div>
+        <div class="input-wrapper">
+            <label for="conf_mot_de_passe"><img src="assets/lock_icon.svg" alt="Confirm Password Icon"></label>
+            <input type="password" id="conf_mot_de_passe" name="conf_mot_de_passe" placeholder="Confirmer le mot de passe" required>
+        </div>
+        <div class="input-wrapper">
+            <label for="phone"><img src="assets/phone_icon.png" alt="Phone Icon"></label>
+            <input type="tel" id="phone" name="phone" placeholder="Numéro de téléphone" required>
+        </div>
+        <button type="submit">S'inscrire</button>
+    </form>
+</div>
+</body>

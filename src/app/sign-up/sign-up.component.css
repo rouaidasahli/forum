@@ -1,0 +1,93 @@
+body {
+    margin: 0;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+    background-image: url('/assets/background_signup.jpg'); /* Path to your background image */
+    background-size: cover; /* Ensure the background covers the entire viewport */
+    height: 100vh; /* Set the height to cover the entire viewport */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align:left;
+    width: 1000px; /* Increase the width of the container */
+    margin-top: 30px; /* Adjust margin from the top */
+    margin-right: auto; /* Align the container to the left */
+    margin-left: 700px; /* Add some left margin */
+}
+
+
+.logo {
+    width: 150px; /* Adjust the size of the logo */
+    height: 150px; /* Adjust the size of the logo */
+    margin-bottom: 20px;
+    margin-left: 200px;
+}
+
+
+.signup-heading {
+    background-color: #2e4694; /* Background color for the signup heading */
+    color: #fff; /* Text color for the signup heading */
+    padding: 10px 20px; /* Adjust padding as needed */
+    border-radius: 5px; /* Add rounded corners */
+    margin-bottom: 20px; /* Add some spacing between the heading and the form */
+    text-align: center; /* Center the text */
+}
+
+
+.input-wrapper {
+    display: flex;
+    margin-bottom: center;
+    justify-content: flex-start; /* Align content to the left */
+    margin-left: 20px;
+
+}
+
+.input-wrapper label {
+    margin-right: 10px; /* Adjust as needed */
+    width: 20px;
+   
+}
+
+.input-wrapper img {
+    width: 23px; /* Adjust the size of the icons */
+    height: 20px; /* Adjust the size of the icons */
+
+
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"] {
+    width: calc(70% - 60px); 
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #2e4694; /* Only bottom border */
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    border-radius: 10px;
+
+}
+
+button[type="submit"] {
+    width: 150px; 
+    padding: 10px;
+    background-color: #2e4694;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 10px;
+    margin-left: 200px;
+}
+
+button[type="submit"]:hover {
+    background-color: #2e4694;
+}
