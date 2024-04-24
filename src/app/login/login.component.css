@@ -1,0 +1,77 @@
+/* Styles for both sign-up and login pages */
+body {
+    margin: 0;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+    background-image: url('/assets/background_signup.jpg');
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: left;
+    width: 700px;
+    margin-top: 30px;
+    margin-right: auto;
+    margin-left: 100px;
+}
+
+.logo {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 20px;
+    margin-left: 200px;
+}
+
+.input-wrapper {
+    display: flex;
+    margin-bottom: center;
+    justify-content: flex-start;
+    margin-left: 20px;
+}
+
+.input-wrapper label {
+    margin-right: 10px;
+    width: 20px;
+}
+
+.input-wrapper img {
+    width: 23px;
+    height: 19px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"] {
+    width: calc(70% - 60px);
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #2e4694;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
+button[type="submit"] {
+    width: 150px;
+    padding: 10px;
+    background-color: #2e4694;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 10px;
+    margin-left: 200px;
+}
+
+button[type="submit"]:hover {
+    background-color: #2e4694;
+}

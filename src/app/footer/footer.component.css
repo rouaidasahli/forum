@@ -1,0 +1,51 @@
+/* Footer Styles */
+
+.footer {
+  background-color: #343a40;
+  color: #fff;
+  padding: 60px 0;
+}
+
+.footer h5 {
+  color: #fff;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer ul li {
+  margin-bottom: 10px;
+}
+
+.footer ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer ul li a:hover {
+  color: #ccc;
+}
+
+.footer p {
+  color: #ccc;
+}
+
+.footer hr {
+  border-top: 1px solid #ccc;
+}
+
+.footer .col-md-4 {
+  margin-bottom: 30px;
+}
+
+.footer .text-center {
+  margin-top: 30px;
+}
+
+/* Ajout de marges uniformes aux colonnes du footer */
+.footer-column {
+  margin-bottom: 30px;
+}
+

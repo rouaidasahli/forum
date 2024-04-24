@@ -1,0 +1,56 @@
+
+<body>
+
+  <div class="container">
+      <h2>Demande de participation</h2>
+      <form action="#">
+          <div class="input-wrapper">
+              <label for="nom_entreprise">Nom de l'entreprise :</label>
+              <input type="text" id="nom_entreprise" name="nom_entreprise" required>
+          </div>
+          <div class="input-wrapper">
+              <label for="email">Adresse e-mail :</label>
+              <input type="email" id="email" name="email" required>
+          </div>
+          <div class="input-wrapper">
+              <label for="telephone">Numéro de téléphone :</label>
+              <input type="tel" id="telephone" name="telephone" required>
+          </div>
+          <div class="input-wrapper">
+              <label for="pack">Choix du pack :</label>
+              <select id="pack" name="pack">
+                  <option value="pack1">Gold</option>
+                  <option value="pack2">Silver</option>
+                  <option value="pack3">Bronze</option>
+              </select>
+          </div>
+          <div class="input-wrapper">
+              <label for="emplacement">Trois emplacements préférés du stand :</label>
+              <div id="emplacement" class="checkbox-wrapper">
+                  <input type="checkbox" id="emplacement1" name="emplacement[]" value="1">
+                  <label for="emplacement1">Emplacement 1</label><br>
+                  <input type="checkbox" id="emplacement2" name="emplacement[]" value="2">
+                  <label for="emplacement2">Emplacement 2</label><br>
+                  <input type="checkbox" id="emplacement3" name="emplacement[]" value="3">
+                  <label for="emplacement3">Emplacement 3</label><br>
+                  <input type="checkbox" id="emplacement4" name="emplacement[]" value="4">
+                  <label for="emplacement4">Emplacement 4</label><br>
+                  <input type="checkbox" id="emplacement5" name="emplacement[]" value="5">
+                  <label for="emplacement5">Emplacement 5</label><br>
+                  <input type="checkbox" id="emplacement6" name="emplacement[]" value="6">
+                  <label for="emplacement6">Emplacement 6</label><br>
+                  <input type="checkbox" id="emplacement7" name="emplacement[]" value="7">
+                  <label for="emplacement7">Emplacement 7</label><br>
+                  <input type="checkbox" id="emplacement8" name="emplacement[]" value="8">
+                  <label for="emplacement8">Emplacement 8</label><br>
+              </div>
+          </div>
+          <button type="submit">Envoyer</button>
+      </form>
+  </div>
+  <div class="map-container">
+      <img src="/assets/map.jpg" alt="Map Image">
+  </div>
+  </body>
+  
+  
